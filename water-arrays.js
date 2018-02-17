@@ -6,7 +6,7 @@ var s = []
 function setup() {
   createCanvas(400, 400);
   colorMode(HSB)
-    for (var index = 0; index < 10; index++) {
+    for (var index = 0; index < 51; index++) {
     x[index] = 230;
     y[index] = 220;
     ySpeed[index] = random(1, 5);
@@ -21,7 +21,7 @@ function draw() {
   // draw pipe
   rect(0, 200, 230, 20);
   
-  for (var index = 0; index < 50; index++) {
+  for (var index = 0; index < 51; index++) {
     ellipse(x[index], y[index], s[index]);
     y[index] = y[index] + ySpeed[index];
 
